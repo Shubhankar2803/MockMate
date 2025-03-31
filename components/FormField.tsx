@@ -31,6 +31,7 @@ const FormField = ({control,name,label,placeholder,type="text"} : FormFieldProps
     <FormControl>
       <Input className='input'
        placeholder={placeholder} 
+       type={type}
        {...field} />
     </FormControl>
     
@@ -43,3 +44,4 @@ const FormField = ({control,name,label,placeholder,type="text"} : FormFieldProps
 );
 
 export default FormField
+
