@@ -41,7 +41,7 @@ export async function POST(request:Request){
         level: level,
         techstack: techstack.split(","),
         questions: JSON.parse(questions),
-        userId: user?.id,
+        userId: userid,
         finalized: true,
         coverImage: getRandomInterviewCover(),
         createdAt: Timestamp.now(),
