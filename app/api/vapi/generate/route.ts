@@ -14,7 +14,7 @@ export async function POST(request:Request){
 
  const {type,role,level,techstack,amount,userid}= await request.json();
 
-
+console.log(userid)
 
  try {
     const {text: questions}=await generateText({
@@ -41,7 +41,7 @@ export async function POST(request:Request){
         level: level,
         techstack: techstack.split(","),
         questions: JSON.parse(questions),
-        userId: userid,
+        userId: user?.id,
         finalized: true,
         coverImage: getRandomInterviewCover(),
         createdAt: Timestamp.now(),
