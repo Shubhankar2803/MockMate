@@ -2,7 +2,6 @@
 
 import { cn } from '@/lib/utils';
 import { vapi } from '@/lib/vapi.sdk';
-import { error } from 'console';
 import Image from 'next/image'
 import { useRouter } from 'next/navigation';
 import React, { useEffect, useState } from 'react'

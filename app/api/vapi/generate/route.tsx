@@ -41,7 +41,7 @@ console.log(userid)
         level: level,
         techstack: techstack.split(","),
         questions: JSON.parse(questions),
-        userId: user?.id,
+        userId: userid,
         finalized: true,
         coverImage: getRandomInterviewCover(),
         createdAt: Timestamp.now(),
